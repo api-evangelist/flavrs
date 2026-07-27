@@ -1,7 +1,28 @@
 aid: flavrs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flavrs.png
 name: Flavrs
-description: Flavrs is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Flavrs is a consumer food and cooking platform "made for people who live to
+  eat" that pairs short-form cooking videos from notable chefs and food creators
+  (including Eric Ripert and Binging with Babish) with structured recipe data and
+  integrated ingredient shopping, so viewers can watch a dish being made and buy
+  everything they need to cook it in a single app. Backed by a16z and surfaced in
+  the API Evangelist network as a portfolio-lead company profile, Flavrs has since
+  merged with the meal-delivery service CookUnity and now redirects its audience
+  there. Flavrs operates as a mobile consumer application and publishes no public
+  developer API, SDK, or documentation surface at this time; this profile captures
+  its real identity, legal, and social properties for network completeness.
 url: https://raw.githubusercontent.com/api-evangelist/flavrs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +32,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Food
+- Cooking
+- Recipes
+- Video
+- Consumer
+- Grocery
+- Food Tech
 apis: []
+common:
+- type: DomainSecurity
+  url: security/flavrs-domain-security.yml
+- type: Website
+  url: https://flavrs.com
+- type: TermsOfService
+  url: https://flavrs.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://flavrs.com/privacy-policy
+- type: Instagram
+  url: https://www.instagram.com/flavrs.app/
+- type: TikTok
+  url: https://www.tiktok.com/@flavrs.app
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
